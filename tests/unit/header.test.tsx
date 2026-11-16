@@ -39,6 +39,7 @@ describe('Header Component', () => {
       expect(header).toHaveAttribute('role', 'banner');
 
       const leftSection = document.querySelector('.left-section');
+      // here
       const rightSection = document.querySelector('.right-section');
       expect(leftSection).toBeInTheDocument();
       expect(rightSection).toBeInTheDocument();

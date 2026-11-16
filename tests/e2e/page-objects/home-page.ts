@@ -14,6 +14,7 @@ export class HomePage extends BasePage {
   readonly header: Locator;
   readonly modeSwitcher: Locator;
   readonly examplesButton: Locator;
+  readonly sealButton: Locator;
   readonly gistButton: Locator;
   readonly settingsButton: Locator;
   readonly exportButton: Locator;
@@ -47,6 +48,7 @@ export class HomePage extends BasePage {
     this.header = page.locator('.app-header');
     this.modeSwitcher = page.locator('.mode-switcher-wrapper');
     this.examplesButton = page.locator('.header-button:has-text("Examples")');
+    this.sealButton = page.locator('.header-button:has-text("Seal")');
     this.gistButton = page.locator('.header-button:has-text("Gist")');
     this.settingsButton = page.locator('.header-button:has-text("Settings")');
     this.exportButton = page.locator('.header-button:has-text("Export")');

@@ -26,6 +26,7 @@
   --box-shadow-color: rgba(0, 0, 0, 0.2);
   --transparent-color: rgba(0, 0, 0, 0.08);
   --transparent-bg-color: rgba(0, 0, 0, 0.8);
+  --seal-blue-color: #18b2c9;
 }
 
 body,
@@ -35,6 +36,7 @@ html {
   font-family: var(--base-font-family);
   line-height: var(--base-line-height);
   overflow: hidden;
+  background-color: violet;
 }
 
 * {

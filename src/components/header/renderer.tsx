@@ -345,6 +345,13 @@ const Header: React.FC<Props> = ({showExample}) => {
     }
   }, [editorRef]);
 
+  // here refer to the project program
+    const sealProgramCall = useCallback(() => {
+    console.log("Hello There");
+    const sealSVG = document.querySelector(".marks")
+    console.log(sealSVG)
+  }, [editorRef]);
+
   const verifyTokenLocally = async (token: string): Promise<any> => {
     try {
       const decoded = atob(token);
@@ -480,6 +487,13 @@ const Header: React.FC<Props> = ({showExample}) => {
     <div className="header-button" onClick={openCommandPalette}>
       <Terminal className="header-icon" />
       {'Commands'}
+    </div>
+  );
+
+  const sealButton = (
+    <div className="header-button" id='seal' onClick={sealProgramCall}>
+      <Terminal className="header-icon" />
+      {'Seal'}
     </div>
   );
 
@@ -698,6 +712,7 @@ const Header: React.FC<Props> = ({showExample}) => {
           {autoRunToggle}
         </span>
         {optionsButton}
+        {sealButton}
 
         <PortalWithState closeOnEsc>
           {({openPortal, closePortal, isOpen, portal}) => (

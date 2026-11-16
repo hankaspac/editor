@@ -26,6 +26,19 @@
   background: var(--transparent-color);
 }
 
+.header-button#seal{
+  color: var(--seal-blue-color);
+  border-style: groove;
+  border-color: var(--seal-blue-color);
+  font-weight: bolder;
+}
+
+.header-button#seal:hover{
+  color: violet;
+  background-color: var(--seal-blue-color);
+  font-weight: bolder;
+}
+
 .app-header section > span {
   display: flex;
   align-items: center;
